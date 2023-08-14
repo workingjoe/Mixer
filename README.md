@@ -1,6 +1,10 @@
 # Mixer
 Work remaining to get M32 going 
 
+# Drums
+* Snare microphone stand/connector and wired to snake
+* Add cymbol protective sleeves
+
 # Wiring
 * Replace input wireless mic cables (XLR) to mixer (all 4 of them)
 * New output bus1-bus2 (XLR) to PC (3.5mm) input for stream
