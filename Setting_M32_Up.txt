@@ -1,0 +1,140 @@
+Allam House
+   https://www.youtube.com/watch?v=pMnaiuC55RY
+	  16 channels 
+	  
+1 DCA for pads
+1 DCA for PC (aux)
+1 instrument reverb
+1 vocal reverb
+
+================================================
+
+Mixbuxs
+6 in ear monitors   
+  1. 2. vocals
+  3. drums
+  4. bass
+  5. elec guitar
+  6. keys
+  blank
+  blank
+------
+9,10,11,12 blank
+  Fx13 vocal reverb
+  Fx14 band reverb
+  Fx15 
+  fx16
+
+=========================================
+#1 -- select 2 MixBus  for STREAM
+[HOME][CONFIG][GATE][DYN][EQ][SENDS][MAIN]
+pick 11,12 and LINK them leave fader down
+with 11 selected, use right-arrow to [CONFIG] tab
+CHANNEL SENDS config -- IMPORTANT -- select POST-FADER
+  so that MAIN mix changes will be replicated into STREAM (11/12) 
+  so will follow.
+HIT SETUP Button and make these "RED" INVERT can change icon or whatever.
+So RED pair of 11/12 to be stream outputs.  PAN will be hard-left/right.
+
+=========================================
+#2 Send INPUTS to MixBus
+  select 1 -- then SENDS ON FADER
+  BRING ALL FADERS UP to ZERO 
+     so since 'post-fader, then 100% of fader movement will be tracked!!!
+
+Since IN HOUSE will have very little drums, bass and be 'thin'  make 
+small MINOR adjustments from ZERO to add or subtact from house expectations...
+LISTEN to it and adjust...
+
+=========================================
+#3 add FX for the Stream
+   Levels are 'soft' need to add a LIMITER
+	
+FX 1  -- Vintage Verb     just for stream (ROOM)
+FX 2  -- Delay + Chamber  just for stream
+	
+FX 1 == DECAY turned down to 1.7, low multiply to 1.00
+   high multiply = 0.50   modulate = 26%, tab down
+   pre-delay = 35, low-cut 132, high-cut 10K, level = 0db (VINTAGE selected)
+
+FX 2 == 	Time = 240, pattern = 1/2  Feedback Cut = 6K, feedback = 10%, cross=10%
+   pre-delay = 0,  decay = 1.7 , size = 24% leave rest alone
+	
+Select FX-1 with SEND-on-FADER -- PUT everything in it mostly around zero, 
+   kick, bass, snare at zero, overheads -5, pastor mics WAY down -20 so they sound like a room
+	vocals around -5 --
+	
+Select FX-2 -- ONLY for vocals (at zero_ and maybe guitars ( -10)
+
+=========================================
+#5 - REMOVE FX from HOUSE mix
+UN-SELECT SEND-on-FADER
+
+Look at FX returns (3rd page) 
+  SETUP COLOR to match FX-1(L) and FX-1(R) same as MixBus13 color ROOM REVERB
+  SETUP COLOR to match FX-2(L) and FX-2(R) same as MixBus14 color
+  
+  SELECT FX-1 pair and FX-2 return pair and DE-SELECT MAIN-BUS 
+  
+  Now we need to ADD THESE INTO STREAM
+     Select (MixBus 11) and SENDS-on-FADER -- 
+	  pull FX-1 return and FX-2 returns into that stream mix, 
+	  likely more FX-1 than FX-2  -- set and forget -- static.
+	  
+   SENDS-on-Fader OFF
+	
+=========================================
+#6 - Add Limiter
+
+   Select MixBus-11 -- turn on EQ (low-cut 40Hz), add 100-200 up,
+	   turn down 400-500 Hz.
+	treat like mastering Compressor -- 4:1 
+	attach 40ms, no hold, release lowest it will go
+	pull down curve at top to about -6db 
+	
+	[HOME] tab --
+	   look at order on screen 
+		was -- Link - INS - EQ - COMP -- LR 
+		change to POST 
+		now -- Link - EQ - COMP - INS - LR
+		  maybe change order to EQ -then- COMP then INS
+		  
+		Hit Effects, select FX8 as PRECISION LIMITER
+		Out Gain = -1, Squeeze = 50%, attack lowest, release 500ms
+		
+		EFFECTS home screen, set FX-8 INPUTS to Mixbus 11/12 and hit INSERT.
+		While listening -- usually  5dB Input Gain 
+		
+
+ALL THIS RELIES ON GAIN STRUCTURE SET PROPERLY
+
+=========================================
+#7 - PANNING!!!
+   Overheads panned hard for FOH --
+	
+	- IF YOU WANT IT TO FOLLOW PANNING OF HOUSE --
+	Select each input , VIEW button next to SENDS
+	Use 1st encoder to scoot to 11/12 -- button says "follow LR pan"
+	
+=========================================
+#8 - Tap TEMPO 
+   - SET-A - button 6 -- FX-2 - params -- TIME
+	                    
+ 
+ SAVE THE SCENES!!!! 
+ 
+ VIEW BUTTON ON MONITORING -- 
+
+    SOLO OPTIONS -- Exclusive (Last) 
+	 MixBus SOLO AFL -- hearing actual product out-to-stream in headphones
+    DIM will turn headphone level by 'set' level -- so if Stream 5Db higher, set -5 dB DIM
+	 
+
+		
+		
+		
+
+  
+
+	 
+  
