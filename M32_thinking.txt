@@ -1,0 +1,98 @@
+Notes to self (IDEA -A) "all channels Grouped and then on MATRIX"
+  •	Matrix needs buses, only 6 matrix or 3-pairs.
+  •	Bus limitation: must be configured in pairs (pre-send/post-fader).
+  •	Bus-13-16 = FX-Sends 1-4, FX-Returns 1-4 are stereo pairs 
+  •	Use Bus for Wedge - then M32-Q can be used by musicians.
+  •	SUB may be own mix – can we use output of Matrix-1,2 as input?
+  •	FX-1 = Reverb for VOX (stereo)
+  •	FX-2 = Reverb for WEDGE monitor 
+  •	FX-3 = Limiter/Multi-band for FOH Matrix-1,2 mix
+  •	FX-4 = Limiter/Multi-band for STREAM Matrix-3,4 mix
+  •	FX-5 = Insert Stereo doubler/chorus for guitar (mono->stereo)
+  •	FX-6 = Insert Reverb for In-Ears (stereo)
+  •	FX-7 = Insert Stereo EQ on FOH to compensate (stereo)
+  •	FX-8 = Insert Stereo EQ on Stream (stereo)
+Matrix
+  •	Matrix-1,2 = Main FOH stereo 
+  •	Matrix-3,4 = Stream Out stereo 
+  •	Matrix-5,6 = Stereo In-Ears Mix
+Buses
+  •	Bus-01 = Wedge monitor mono
+  •	Bus-02 = Pastor/Announce (ch-1, ch-2, ch-3, ch-4)
+  •	Bus-03 = Bass/Cello mix
+  •	Bus-04 = Drums mix
+  •	Bus-05+06 pair = BAND stereo
+  •	Bus-07+08 pair = VOX stereo 
+  •	Bus-09+10 pair = In-Ears Mix-A
+  •	Bus-11+12 pair = Stream out
+  •	Bus-13 = FX-1 = Reverb for VOX
+  •	Bus-14 = FX-2 = Reverb for Wedge
+  •	Bus-15 = FX-3 = Enhancement for Main FOH
+  •	Bus-16 = FX-4 = Limiter/Multi-band for Stream
+  •	FX-5 = Insert Chorus/Delay for Guitars?
+  •	FX-6 = Insert ?? for In-Ears?
+  •	FX-7 = Insert stereo EQ for FOH
+  •	FX-8 = Insert stereo EQ for Stream
+
+Main -> Matrix-1,2 (FOH) -> Multi-band (FX-3) -> Post-Fader-Insert Stereo-EQ -> Out-15&16
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ 
+HOW TO GET REVERB into P16 and possibly WEDGE monitors:
+
+2a (Separate reverb INSERT for Gwen)
+  •	FX-1 Reverb changed to an INSERT on Gwen channel.
+  •	Add FX-1 internal enable/disable as a custom hot-key.
+  •	Avoid double reverb by removing Gwen channel from Vox verb.
+  •	Pos Side-effect is Wedge will get Gwen reverb.
+  •	Neg Side-effect is TWO places to mute reverb effects.
+  •	Neg Side-effect is Gwen can NOT control her own reverb.
+
+2b (Separate reverb for Gwen as P16 channel)
+  •	FX-1 Reverb dedicated to Gwen channel.
+  •	FX-1-Return mapped as channel 3 on P16.
+  •	Pos Side-effect is Gwen can control her own reverb as ch-3.
+  •	Neg Side-effect is only 4 reverb FX units available.
+  •	Neg-Side-effect is different from a general VOX reverb.
+
+2c (General VOX reverb as P16 channel)
+  •	FX-1 Reverb dedicated to VOX.
+  •	FX-1-Return mapped as channel 3 on P16.
+  •	Pos Side-effect is all VOX get the reverb.
+  •	Neg Side-effect is Gwen can’t individually control her reverb.
+
+CAN I ADD FX-1 Returns into a bus (Wedge) send?
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+USE PC/mini-PC/Mini-MAC as PLUG-IN HOST for *ALL* M32 processing
+
+  + Auto-tune now possible
+  + lots of reverbs/compression/limiters etc.
+
+  - delay/latency introduced
+  - complexity
+  - cost of software (and maybe Mac mini)
+
+Implementation:
+  - map some AUX in/out channels to PC
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Bus-Fed In-Ears
+  * I control levels just like WEDGE
+  * TX can be on stage or sound-booth
+  * multiple RX packs possible
+  * FX can be added, but may increase latency
+
+P16-Fed
+  * Musician adjusts mix per TX
+  * TX must be on stage
+  * multiple RX packs possible 
+  * Raw low-latency sound (no reverb)
+
+Hearing Impaired FEED
+  * Use Stream-Feed ?
+
