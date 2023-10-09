@@ -1,0 +1,38 @@
+-- USER ROUTING --
+Channel Processing BLOCK PATCH
+  Change each column to 
+  [USER In 1-8], [USER In 9-16], [USER In 17-24], [USER In 25-32]
+  
+Expansion CARD OutPuts
+  Select the same thing	
+  [USER In 1-8], [USER In 9-16], [USER In 17-24], [USER In 25-32]
+  
+Patch-->USER
+  INPUT
+	In 1  - Local In 1   could be ANYTHING ...
+	....
+	In 32 - Local In 32
+	
+EXAMPLE: '32-track recording' will use 30 channels from stage and also record Master L/R'
+  OUTPUT (48 channels out over AES-50)   ex: 30 from offstage, 31/32 as L/R Mix
+  
+Check the OUTPUT section (not USER Patch Output) to get actual 'Output Assignment'
+    Original Output-16 = MAIN LRC 'R' Post-Fader
+	Original Output-15 = MAIN LRC 'L' Post-Fader
+	
+Patch-->USER
+   OUTPUT
+   	
+	Original Output 1-8 ???
+	
+	Change Output-31 = OUTPUT Output 15 (this was MAIN LRC 'R') above
+	Change Output-32 = OUTPUT Output 16 (this was MAIN LRC 'L') above
+	
+	Change Output-33 - 48 to P16-1 thru P16-16 
+	
+Now change user output section on CARD
+Expansion CARD Outputs (again?)
+  [USER Out 1-8], [USER Out 9-16], [USER Out 17-24], [USER Out 25-32]
+  
+NOTE:
+  If using P-16 make sure USER P-16 1 thru 16 are on OUTPUT 33 thru 48
