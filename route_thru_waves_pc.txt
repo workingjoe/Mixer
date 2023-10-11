@@ -96,7 +96,84 @@ Button 11 & 12   -- SNIPPET RECALL LIVE/ SNIPPET RECALL WAVES
 IF PC starts to ACT UP -- or anything wierd, to [C]-[10][11] or [C]-[10][12]
 
 ===============================================================
-
 Second part of VIDEO
+===============================================================
 
 Setup Vocal channels thru INSERT point ..
+
+
+If wierd patch, write it down on paper before attempting this!!!
+
+First 4 inputs 1 -- 4  listening to Local-in 1.. 4
+swap with vocals (for him 9 .. 12 Local-in 9..12)
+ 
+ ** save scene!! ** 
+ ** Also during this patch switch LIVE may be impacted, so TURN DOWN MASTERS **
+ 
+Start with Swapping  
+  On Waves PC
+      Lower portion of RACK Change output channels
+	     Rack -1 Output from 1  to  Out 9
+		 Rack -2 Output from 1  to  Out 10
+		 Rack -3 Output from 1  to  Out 11
+		 Rack -4 Output from 1  to  Out 12
+		 
+	     Rack -9  Output from 1  to  Out 1
+		 Rack -10 Output from 1  to  Out 2
+		 Rack -11 Output from 1  to  Out 3
+		 Rack -12 Output from 1  to  Out 4		 
+		 
+  On MIXER 
+     CHANGE  TO **WAVES** MODE (via SNIPPETS)
+	 
+     USER OUTPUTs (going to WAVES computer)
+      instead of being Local in, Change to AUX -OUT- *not *IN**
+	  
+	  So User Out 9:  to AUX-01
+	     User Out 10: to AUX-02
+	     User Out 11: to AUX-03
+		 User Out 12: to AUX-04
+	  
+	  Toggle over to USER INPUTS
+	     User In 1:  -- 4   instead of CARD 1 .. 4
+		    make them Card 9 .. 12
+			
+	     User In 1: to Card 9	
+	     User In 2: to Card 10
+		 User In 3: to Card 11
+	     User In 4: to Card 12		 
+			
+		 User In 9:  to original source (Local-9)
+		 User In 10: to original source (Local-10)
+		 User In 11: to original source (Local-11)
+		 User In 12: to original source (Local-12)	  
+		 
+NOW --- In (all the way to left) INPUT BLOCKS which *WERE* USER-1..32
+
+    	change AUX-IN from AUX-IN (actual 1/4 inch)
+		    Change to CARD 1-4  (*not* USER 1..4)
+			
+At this point, everything should be coming through the channels
+
+   LAST THING...
+      CHANNEL  9 -- CONFIG INSERT "Aux-1" POST to use WAVES as INSERT effect
+      CHANNEL 10 -- CONFIG INSERT "Aux-2" POST to use WAVES as INSERT effect
+      CHANNEL 11 -- CONFIG INSERT "Aux-3" POST to use WAVES as INSERT effect
+      CHANNEL 12 -- CONFIG INSERT "Aux-4" POST to use WAVES as INSERT effect
+	  
+NOW -- Update the WAVES Snippet with this routing !!
+
+*** WHY DID YOU MAP 1 ... 4 ??? ***
+That’s unfortunately a necessity for the X32 because of how the insert 
+function works. I mention it briefly in the video - the inserts can only work 
+with inputs 1-2, 1-4, or 1-6 via Aux-In Remap. 
+Unless your vocal channels happen to land on those channels on your original 
+patch, this routing allows you to put them in no matter where they are plugged in. 
+
+I hope that helps to clear things up a bit :)	  
+	  
+	  
+		
+
+
+
