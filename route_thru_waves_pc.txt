@@ -1,7 +1,8 @@
 
 https://www.youtube.com/watch?v=UsGjbzZGVjs&list=PLd3N9j1y16XFpNPxgm0m7jBR841ELQYCp&index=8&t=43s
 
-ascension worship 
+Ascension worship 
+=======================
    Super Rack performer Native version (existing 2018 laptop)
    Thru USB port not waves card
    2 plugsin -- realtime tune + waves F6
@@ -13,12 +14,12 @@ If *OFF* then level/EQ should not be impacted REALLY...
 That way if turned off it isn't catastrophic
 
 Waves New Session
-   Setup 
-       Smallest size (he did 96) latency vs glitches
+   Setup Page
+       Smallest buffer size (he did 96) latency vs glitches
 	   
    Settings 32 racks
-   Last State  = startup  session
-   
+   startup  session == Last State
+
    Patch = Latency Group 1 == ALL 32 channels together
    
    Overview 1 (all 32)
@@ -29,7 +30,7 @@ Waves New Session
    
    On M32 -- 
       ROUTING -- USER In/Outs
-	  Start with OUTPUTS (what is sent to Waves computer) 
+	  Start with OUTPUTS (what is sent *INTO* Waves computer)
 	     User Out1:    Local In  "Local In 1"
 	     User Out2:    Local In  "Local In 2" etc... down to 16/32
 		 
@@ -45,21 +46,23 @@ Waves New Session
  
       Now we need to get processed signals back into Mixer
 	  
-	  ROUTING -- USER In/Outs
-	  Select INPUTS (coming from Waves computer) 
+	  M32-ROUTING -- USER In/Outs
+	  Select INPUTS (coming back from Waves computer) 
 	  	     User In 1:    Card In  "Card In 1"
 	  	     User In 2:    Card In  "Card In 2"  etc... down to 16/32
 			 
-      Now need to send USER Inputs to actual CHANNELS
+      Now need to send USER Inputs to actual CHANNELS intead of 'local'
       
-	  Tab over to INPUT Processing Block Patch
+	  Tab all-the-way to left over to INPUT Processing Block Patch
 	  change to USER-IN and select USER-IN 1..16 (or 32) to "USER In"
 	  
 	  Now Waves PC output is returning to each channel.
-	  
+
+-----------------------------------------------------------
+THIS HAS PC in the LOOP for every CHANNEL
 -----------------------------------------------------------
 
-Now SETUP 2 Snippets
+Now SETUP 2 Snippets (WITH PC (WAVES) and WITHOUT PC)
 
   1 -- LIVE mode  (without PC)
 	2 -- WAVES mode (with PC)
