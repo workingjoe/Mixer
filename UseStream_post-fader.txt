@@ -1,0 +1,75 @@
+workflow -- stream mix as post-fader strategy from collaborate worship
+
+pair of bux or aux-mixes (stereo)
+go thru each channel and set TAP point
+  most channels set to POST fader (so room vol changes)
+  
+  Select live stream bus
+  config tab -- highlight "Post Fader" on "CH SENDS CONFIG" knob and press ASSIGN
+  this sets all channels to POST FADER for that bus
+  
+  PASTOR MIC's should be PRE-FADER, 
+  AMBIANT MIC's should be PRE-FADER
+  PRE-SERVICE/Video feed music should be PRE-FADER 
+
+  How: if CH-1 is PASTOR mic, select it
+    navigate to SENDS tab, and select LIVE STREAM bus
+    page-down and set mode to PRE for PRE-FADER
+  
+    repeat for AMBIANT MICs, pre-service and video-feeds
+  
+  ===========================
+  Now create a STARTING configuration for LIVE STREAM mix
+  
+  TAP - SENDS ON FADER and then select the LIVE STREAM BUS
+    Now set all VOX to -5 dB all the same
+	 Now set all INSTRUMENTS to 0 dB
+	 Set PASTOR mics to 0 dB as well
+	 Set AMBIANT mics to -10 dB 
+	 Set Pre-service and Video-feeds to -10 dB 
+	 Also check that they are UN-MUTED on LIVE STREAM BUS!
+	 
+================================
+	 APPLY a LIMITER -- it isn't loud enough?
+	 Example: use FX-8, set input INSERTS to LIVE-STREAM buses
+	 change TYPE to LIM (precision limiter)
+	   now navigate to FX-8 "Effect" tab, 
+		check 'stereo link' selected, auto-gain is OFF
+		set INPUT gain to 12 dB
+		set OUTPUT gain to -1 dB
+		set Squeeze to 20%
+		set KNEE to 3dB
+		set ATTACK to 0.5ms
+		set RELEASE to 150ms
+		adjust INPUT gain during LOUD portion of band so that GAIN REDUCTION 3-4 dB at most
+		
+NOW -- select LIVE STREAM BUS, and HOME button
+		navigate to CONFIG tab and set INSERT position to POST 
+		-- this makes the LIMITER *LAST* guy in chain
+		
+=================================
+AMBIANT mics
+small diaphram condensors on each side of stage a few feet behind main speakers
+linked as STEREO pair
+set gain for them when room full of sound, add LOW CUT at 300 Hz
+
+=================================
+EQ for audio quality loss of youtube/facebook
+   Find EQ -- set shelving +6 dB at 12Khz
+
+Add REVERB to the mix, and PANNING
+  use same REVERB as main MX, 
+  select FX-returns, navigate to SENDS TAB
+  make sure LIVE STREAM bus is set PRE-FADER
+  set LEVEL to -5 dB 
+  repeat this for all FX-returns used in main mix
+  
+  PANNING -- NEVER PAN LEAD VOX -- BASS/KICK/SNARE
+  
+COMPRESSION
+   KICK drum example: 
+	   Ratio 5:1  gain 6dB,  Attack 10ms, Hold 0ms, release 120ms
+		threshold so that gain reduction is -6 dB at most
+	
+	
+		
