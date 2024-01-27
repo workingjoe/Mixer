@@ -2,7 +2,10 @@
 Work remaining to get M32 going 
 
 # Drums
-* Drum levels really low on Stream and recording.  Set INPUT levels?
+* currently cajone is in main mix, rest of drums on sub-group(bus-4)
+* new sticks, new snare stand, new snare-mic stand,
+* Phil donated hi-hat stand 
+* 
 
 # Wiring
 * Check if PRE/POST fader best for Stream or Wedge mixes
@@ -15,7 +18,7 @@ Work remaining to get M32 going
 * output for HOUSE Left  = XLR16
 * output for HOUSE Right = XLR15
 * output for SUB = mon   = XLR14
-* output for ??? =       = XLR13
+* output for bus-3 WEDGE =     = XLR13
 ***
 # Patches:
 * Combine drums into a group fader
@@ -25,7 +28,7 @@ Work remaining to get M32 going
 * WiFi for sound only ROC_SOUND
 ***
 # Monitors:
-1. Add feedback eliminator for wedge (Left) 
+1. Feedback eliminator for wedge (Left) 
 1. stage wedge with bus3 XLR 
 1. Johnson amp also on bus3 feed from (a.) 1/4 in
 1. Wireless in-ears on stage or in sound-booth
